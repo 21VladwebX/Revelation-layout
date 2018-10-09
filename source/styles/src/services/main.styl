@@ -1,0 +1,34 @@
+.services
+	height: 226px;
+	width: 100%;
+	
+	&-row
+		display: grid;
+		grid-template-rows: 100%;
+		grid-template-columns: repeat(4,210px);
+		grid-column-gap: 20px;
+		
+		&__clm
+			display: flex;
+			flex-direction: column;
+			&-top
+				display: flex;
+				flex-direction: column;
+				padding-bottom: 24px;
+				border-bottom: 1px solid lightGray;
+				text-align: center;
+				color: fiolet;
+				font-weight: 500;
+				font-size: 14px;
+				img
+					margin: 0 auto;
+					margin-bottom: 20px;
+					width: 64px;
+					height: 64px;
+			
+			&-text
+				text-align: center;
+				padding-top: 20px;
+				color: lightGrayText;
+				line-height: 160%;
+				font-size: 10px;
