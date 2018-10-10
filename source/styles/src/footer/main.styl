@@ -1,0 +1,129 @@
+.footer
+	display: grid;
+	grid-template-columns: 360px 415px;
+	grid-column-gap: 107px;
+	
+	
+	.footerLeft
+		display: grid;
+		grid-template-columns: 220px 140px;
+		grid-column-gap: 27px;
+		
+
+		&__block
+			width: 100%;
+			.title
+				display: block;
+				font-size: 13px;
+				color: white;
+				margin: 30px 0;
+			&-title
+				span
+					display: block;
+					font-size: 7px;
+					color: lightGrayText;
+				span:first-of-type
+					color: footerfiolet;
+					font-size: 10px;
+			
+			&-text
+				margin-top: 17px;
+				
+				span
+					color: lightGrayText;
+					font-size: 10px;
+			ul
+				margin: 0;
+				padding: 0;
+				height: 150px;
+				margin-left: 10px;
+				margin-top: -5px;
+				li
+					list-style: none; 
+					position: relative;
+							
+					&:not(:first-of-type)
+						margin-top: 1px;
+					a
+						font-size: 9px;
+						color: footerfiolet;
+					
+					&:after
+						content: '«';
+						transform: rotate(180deg);
+						position: absolute;
+						top: calc(50% + 0px);
+						// margin: auto 0;
+						left: -15px;
+						font-size: 10px;
+						letter-spacing: -2px;
+						width: 10px;
+						height: 10px;
+						color: white;								
+	
+	.footerRight
+		display: grid;
+		grid-template-columns: 190px 225px;
+		grid-column-gap: 57px;
+	
+		&__block
+			width: 100%;
+			.title
+				display: block;
+				font-size: 13px;
+				color: white;
+				margin: 30px 0;
+				
+			ul
+				list-style: none;
+				padding: 0;
+				font-size: 9px;
+				color: lightGrayText;
+				
+				li:not(:first-of-type)
+					margin-top: 4px;
+			&-text
+				margin-top: 21px;
+				font-size: 9px;
+				color: lightGrayText;
+				
+				span:nth-child(1), span:nth-child(2) 
+					display: block;
+				
+				.email
+					display: inline;
+					color: fiolet;
+			form
+				border: none;
+				input
+					margin: 5px 0;
+					border: none;
+					background-color: inputGrey;
+					padding: 10px;
+					font-size: 10px;
+					color: lightGrayText;
+					border-radius: 5%;
+					width: 225px;
+					height: 11px;
+					
+				button
+					border-radius: 5%;
+					margin: 5px 0;
+					border: none;
+					background-color: fiolet;
+					padding: 10px;
+					font-size: 10px;
+					color: white;
+					text-transform: uppercase;
+					width: 80px;
+					height: 31px;
+			
+			&-soc
+				margin-top: 22px;
+				a
+					margin-left: 10px;
+					img
+						border-radius: 50%;
+						width: 32px;
+						height: 32px;
+								
