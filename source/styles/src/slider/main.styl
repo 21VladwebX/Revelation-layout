@@ -1,4 +1,5 @@
 .slider
+	position: relative;
 	&-sliders
 		height: 420px;
 		width: 100%;
@@ -49,3 +50,41 @@
 					border-radius: 5px;
 					margin-top: 16px;
 					background-color: fiolet;		
+	
+	&-toolbar
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+		z-index: 1;
+		top: calc( 100% - 53px);
+		&__content
+			width: 900px;
+			height: 53px;
+			background-color: white;
+		&__leftArrow
+			// position:
+			width: 29px
+			height: 53px;
+			border-top-left-radius: 5px;
+			border-right: 1px solid lightGray;
+			background-color: white;
+			display: flex;
+			justift-content: center;
+			align-items: center;
+			
+			img
+				margin: 0 auto; 
+		
+		&__rightArrow
+			background-color: white;
+			border-top-right-radius: 5px;
+			border-left: 1px solid lightGray;
+			width: 29px
+			height: 53px;
+			display: flex;
+			justift-content: center;
+			align-items: center;
+			img
+				margin: 0 auto; 
+				transform: rotate(180deg);
