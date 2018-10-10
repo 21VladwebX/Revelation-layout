@@ -1,4 +1,5 @@
 .slider
+	position: relative;
 	&-sliders
 		height: 420px;
 		width: 100%;
@@ -12,31 +13,78 @@
 		
 			&-left
 				height: 388px;
-				padding: 16px 0;
+				width: 100%;
+				margin: 26px 0 0 0px;
+				
 				img
 					height: 100%;
 					width: 100%;
 			
 			&-right
-				padding-top: 141px;
+				padding-top: 110px;
 				text-align: left;
 				padding-bottom: 95px;
 				
+				
 				h2
-					font-size: 26px;
+					// margin: 24px 0 ;
+					font-size: 30px;
 					color: GrayText;
 					text-transform: uppercase;
-				
+					margin-bottom: 19px;
 				span
+				
 					color: mediumGrayText;
-					font-size: 12px;
-					line-height: 14px;
+					font-size: 13px;
+					line-height: 22px;
 				a 
-					display: block
+					display: flex;
+					justift-content: center;
+					align-items: center;
 					width: fit-content;
 					color: white;
 					text-transform: uppercase;
-					padding: 10px;
+					padding: 8px;
+					height: 18px;
+					font-weight: 500;
 					border-radius: 5px;
-					margin-top: 21px;
+					margin-top: 16px;
 					background-color: fiolet;		
+	
+	&-toolbar
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		position: absolute;
+		z-index: 1;
+		top: calc( 100% - 53px);
+		&__content
+			width: 900px;
+			height: 53px;
+			background-color: white;
+		&__leftArrow
+			// position:
+			width: 29px
+			height: 53px;
+			border-top-left-radius: 5px;
+			border-right: 1px solid lightGray;
+			background-color: white;
+			display: flex;
+			justift-content: center;
+			align-items: center;
+			
+			img
+				margin: 0 auto; 
+		
+		&__rightArrow
+			background-color: white;
+			border-top-right-radius: 5px;
+			border-left: 1px solid lightGray;
+			width: 29px
+			height: 53px;
+			display: flex;
+			justift-content: center;
+			align-items: center;
+			img
+				margin: 0 auto; 
+				transform: rotate(180deg);
